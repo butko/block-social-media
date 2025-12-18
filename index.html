@@ -1,0 +1,187 @@
+<style>
+/*----------------------------------------------------
+	Описываем поведение блока, который содержит ссылки на социальные сети
+----------------------------------------------------*/
+
+.block-social-media {
+	width:100%;
+	overflow:hidden;
+	clear:both;
+}
+
+/*----------------------------------------------------
+	Задаём фоновые изображения
+	Замените пути на реальное расположение файлов
+	Предполагается, что все изображения будут квадратными
+	Размер масштабируется в селекторе .block-social-media i
+----------------------------------------------------*/
+
+.block-social-media-email i {
+    background-image: url("img/email.png");
+}
+
+.block-social-media-vk i {
+    background-image: url("img/vk.png");
+	// Брендбук - https://vk.com/brand
+}
+
+.block-social-media-max i {
+    background-image: url("img/max.png");
+}
+
+.block-social-media-rutube i {
+    background-image: url("img/rutube.png");
+	// Брендбук - https://rutube.ru/brand/
+}
+
+.block-social-media-ok i {
+    background-image: url("img/ok.png");
+	// Брендбук - https://insideok.ru/brandbook/
+}
+
+.block-social-media-dzen i {
+    background-image: url("img/dzen.png");
+	// Брендбук - https://dzen.ru/about/download
+}
+
+.block-social-media-tg i {
+    background-image: url("img/tg.png");
+	// Брендбук - https://telegram.org/tour/screenshots
+}
+
+/*----------------------------------------------------
+	Описываем оформление и поведение элементов списка
+----------------------------------------------------*/
+
+.block-social-media li {
+	display: block;
+	float: left;
+	box-sizing: border-box;
+	margin:1px;
+	padding:0; 
+	width: fit-content;
+	height: fit-content;
+}
+
+/*----------------------------------------------------
+	Описываем оформление и поведение значка социальной сети
+----------------------------------------------------*/  
+
+.block-social-media i {
+	color: #000000;
+	height: 50px;
+	width: 50px;
+	text-align: center;
+	vertical-align: sub;
+	background-position: center;
+    background-repeat: no-repeat;	
+	background-size: contain;
+	display:block;	
+}
+
+.block-social-media__small i {
+	height: 30px;
+	width: 30px;
+}
+
+.block-social-media__rounded_corners i {
+	border-radius: 15px;	
+}
+
+.block-social-media__rounded_corners + .block-social-media__small  i {
+	border-radius: 7px;	
+}
+
+.block-social-media__circle i {
+	border-radius: 100px;	
+}
+
+/*----------------------------------------------------
+	Описываем оформление и поведение ссылки
+----------------------------------------------------*/  
+
+.block-social-media a {
+	border:0;
+}
+/*----------------------------------------------------*/
+
+</style>
+
+<h2>Квадраты:</h2>
+
+<div class="block-social-media">
+	<ul>
+		<li class="block-social-media-email"><a href="mailto:#" rel="noopener" target="_blank"><i aria-hidden="true"></i></a></li>	
+		<li class="block-social-media-max"><a href="#" rel="noopener" target="_blank"><i aria-hidden="true"></i></a></li>				
+		<li class="block-social-media-rutube"><a href="#" rel="noopener" target="_blank"><i aria-hidden="true"></i></a></li>		
+		<li class="block-social-media-vk"><a href="#" rel="noopener" target="_blank"><i aria-hidden="true"></i></a></li>				
+		<li class="block-social-media-dzen"><a href="#" rel="noopener" target="_blank"><i aria-hidden="true"></i></a></li>
+		<li class="block-social-media-ok"><a href="#" rel="noopener" target="_blank"><i aria-hidden="true"></i></a></li>				
+		<li class="block-social-media-tg"><a href="#" rel="noopener" target="_blank"><i aria-hidden="true"></i></a></li>	
+	</ul>
+</div>
+
+<div class="block-social-media block-social-media__small">
+	<ul>
+		<li class="block-social-media-email"><a href="mailto:#" rel="noopener" target="_blank"><i aria-hidden="true"></i></a></li>	
+		<li class="block-social-media-max"><a href="#" rel="noopener" target="_blank"><i aria-hidden="true"></i></a></li>				
+		<li class="block-social-media-rutube"><a href="#" rel="noopener" target="_blank"><i aria-hidden="true"></i></a></li>		
+		<li class="block-social-media-vk"><a href="#" rel="noopener" target="_blank"><i aria-hidden="true"></i></a></li>				
+		<li class="block-social-media-dzen"><a href="#" rel="noopener" target="_blank"><i aria-hidden="true"></i></a></li>
+		<li class="block-social-media-ok"><a href="#" rel="noopener" target="_blank"><i aria-hidden="true"></i></a></li>				
+		<li class="block-social-media-tg"><a href="#" rel="noopener" target="_blank"><i aria-hidden="true"></i></a></li>	
+	</ul>
+</div>
+
+
+<h2>Квадраты со скруглёнными углами:</h2>
+
+<div class="block-social-media block-social-media__rounded_corners">
+	<ul>
+		<li class="block-social-media-email"><a href="mailto:#" rel="noopener" target="_blank"><i aria-hidden="true"></i></a></li>	
+		<li class="block-social-media-max"><a href="#" rel="noopener" target="_blank"><i aria-hidden="true"></i></a></li>				
+		<li class="block-social-media-rutube"><a href="#" rel="noopener" target="_blank"><i aria-hidden="true"></i></a></li>		
+		<li class="block-social-media-vk"><a href="#" rel="noopener" target="_blank"><i aria-hidden="true"></i></a></li>				
+		<li class="block-social-media-dzen"><a href="#" rel="noopener" target="_blank"><i aria-hidden="true"></i></a></li>
+		<li class="block-social-media-ok"><a href="#" rel="noopener" target="_blank"><i aria-hidden="true"></i></a></li>				
+		<li class="block-social-media-tg"><a href="#" rel="noopener" target="_blank"><i aria-hidden="true"></i></a></li>	
+	</ul>
+</div>
+
+<div class="block-social-media block-social-media__rounded_corners block-social-media__small">
+	<ul>
+		<li class="block-social-media-email"><a href="mailto:#" rel="noopener" target="_blank"><i aria-hidden="true"></i></a></li>	
+		<li class="block-social-media-max"><a href="#" rel="noopener" target="_blank"><i aria-hidden="true"></i></a></li>				
+		<li class="block-social-media-rutube"><a href="#" rel="noopener" target="_blank"><i aria-hidden="true"></i></a></li>		
+		<li class="block-social-media-vk"><a href="#" rel="noopener" target="_blank"><i aria-hidden="true"></i></a></li>				
+		<li class="block-social-media-dzen"><a href="#" rel="noopener" target="_blank"><i aria-hidden="true"></i></a></li>
+		<li class="block-social-media-ok"><a href="#" rel="noopener" target="_blank"><i aria-hidden="true"></i></a></li>				
+		<li class="block-social-media-tg"><a href="#" rel="noopener" target="_blank"><i aria-hidden="true"></i></a></li>	
+	</ul>
+</div>
+
+<h2>Круги:</h2>
+
+<div class="block-social-media block-social-media__circle">
+	<ul>
+		<li class="block-social-media-email"><a href="mailto:#" rel="noopener" target="_blank"><i aria-hidden="true"></i></a></li>	
+		<li class="block-social-media-max"><a href="#" rel="noopener" target="_blank"><i aria-hidden="true"></i></a></li>				
+		<li class="block-social-media-rutube"><a href="#" rel="noopener" target="_blank"><i aria-hidden="true"></i></a></li>		
+		<li class="block-social-media-vk"><a href="#" rel="noopener" target="_blank"><i aria-hidden="true"></i></a></li>				
+		<li class="block-social-media-dzen"><a href="#" rel="noopener" target="_blank"><i aria-hidden="true"></i></a></li>
+		<li class="block-social-media-ok"><a href="#" rel="noopener" target="_blank"><i aria-hidden="true"></i></a></li>				
+		<li class="block-social-media-tg"><a href="#" rel="noopener" target="_blank"><i aria-hidden="true"></i></a></li>	
+	</ul>
+</div>
+
+<div class="block-social-media block-social-media__circle block-social-media__small">
+	<ul>
+		<li class="block-social-media-email"><a href="mailto:#" rel="noopener" target="_blank"><i aria-hidden="true"></i></a></li>	
+		<li class="block-social-media-max"><a href="#" rel="noopener" target="_blank"><i aria-hidden="true"></i></a></li>				
+		<li class="block-social-media-rutube"><a href="#" rel="noopener" target="_blank"><i aria-hidden="true"></i></a></li>		
+		<li class="block-social-media-vk"><a href="#" rel="noopener" target="_blank"><i aria-hidden="true"></i></a></li>				
+		<li class="block-social-media-dzen"><a href="#" rel="noopener" target="_blank"><i aria-hidden="true"></i></a></li>
+		<li class="block-social-media-ok"><a href="#" rel="noopener" target="_blank"><i aria-hidden="true"></i></a></li>				
+		<li class="block-social-media-tg"><a href="#" rel="noopener" target="_blank"><i aria-hidden="true"></i></a></li>	
+	</ul>
+</div>
